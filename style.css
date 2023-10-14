@@ -14,11 +14,16 @@ body, html {
     src: url('font/abnes.ttf');
 }
 
+       /* textos para pc*/
+
+                                                   /* frase adicional no esta todavia */
 .content p{
     color: white;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
 }
+
+                                                 /* frase pricipal (nombre) */
 
 .content h1{
     color: white;
@@ -26,12 +31,56 @@ body, html {
     font-size: 5vw;
 }
 
+                                                   /* frase secundaria gc faceit */
+
 .texto{
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 1.5vw;
     text-decoration: none;
 }
+
+
+                                                    /* SEPARADORES */
+
+.estilo{
+    color: white;
+
+    font-size: 1.4vw;
+    text-decoration: none;
+}
+
+
+       /* textos anteriores acomodados para el telefono */
+
+
+@media (max-height: 680px) { 
+    .content h1{
+        color: white;
+        font-family: 'Fran';
+        font-size: 6vw;
+    }
+
+    .texto{
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 4vw;
+        text-decoration: none;
+    }
+
+    .estilo{                     
+        color: white;
+    
+        font-size: 4vw;
+        text-decoration: none;
+    }
+
+
+        /* fin de lo del telefono */
+
+
+  }
+
 .texto:hover{
     transition: 0.5s;
     color: rgb(255, 121, 121);
@@ -87,3 +136,4 @@ h1{
 .options span {
     margin: 0 10px;
 }
+
