@@ -78,20 +78,20 @@ body, html {
     .content h1{
         color: white;
         font-family: 'Fran';
-        font-size: 6vw;
+        font-size: 10vw;
     }
 
     .texto{
         color: white;
         font-family: 'Roboto', sans-serif;
-        font-size: 4vw;
+        font-size: 6vw;
         text-decoration: none;
     }
 
     .estilo{                     
         color: white;
     
-        font-size: 4vw;
+        font-size: 6vw;
         text-decoration: none;
     }
 
