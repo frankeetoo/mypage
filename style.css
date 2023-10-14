@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgba(15, 10, 10, 0.815), rgba(46, 29, 31, 0.582)),url('background.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'titleFont';
+    src: url('font/abnes.ttf');
+}
+
+.txt{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.txt:hover{
+    transition: 0.3s;
+    color: #a66a71;
+}
+
+
+.content h1{
+    color: white;
+    font-family: 'titleFont';
+    font-size: 80px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+.options {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    gap: 5px; 
+}
+
+.txt, .separator {
+    text-align: center;
+}
+
+.separator {
+    color: white;
+    margin: 0 20px; 
+}
+
