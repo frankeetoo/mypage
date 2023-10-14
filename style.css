@@ -1,65 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
-
 body, html {
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, rgba(15, 10, 10, 0.815), rgba(46, 29, 31, 0.582)),url('background.gif') no-repeat center center fixed;
-    background-size: cover;
+    overflow: hidden;
+    position: relative;
 }
 
 @font-face {
-    font-family: 'titleFont';
+    font-family: 'Fran';
     src: url('font/abnes.ttf');
 }
 
-.txt{
+.content p{
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content h1{
+    color: white;
+    font-family: 'Fran';
+    font-size: 5vw;
+}
+
+.texto{
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
     text-decoration: none;
 }
-
-.txt:hover{
-    transition: 0.3s;
-    color: #a66a71;
+.texto:hover{
+    transition: 0.5s;
+    color: rgb(255, 121, 121);
 }
 
-
-.content h1{
-    color: white;
-    font-family: 'titleFont';
-    font-size: 80px;
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
+.video-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.904));
+    z-index: 1;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    z-index: 2;
 }
 
-h1 {
+h1{
     margin: 0;
+    padding-bottom: 10px;
 }
 
-.options {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    width: 100%;
-    gap: 5px; 
+.options span {
+    margin: 0 10px;
 }
-
-.txt, .separator {
-    text-align: center;
-}
-
-.separator {
-    color: white;
-    margin: 0 20px; 
-}
-
